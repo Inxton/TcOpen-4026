@@ -23,7 +23,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.17" />
-	<PackageReference Include="Inxton.Vortex.Presentation.Controls.Blazor-experimental" Version="2.0.0" />
+	<PackageReference Include="Inxton.Vortex.Presentation.Controls.Blazor-experimental" Version="3.0.1-alpha.1089" />
   </ItemGroup>
 
   <ItemGroup>

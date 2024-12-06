@@ -17,7 +17,7 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="Inxton.Package.Vortex.Essentials.Wpf" Version="2.0.0" />
+    <PackageReference Include="Inxton.Package.Vortex.Essentials.Wpf" Version="3.0.1-alpha.1089" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Abstractions\TcOpen.Inxton.Abstractions.csproj" />
