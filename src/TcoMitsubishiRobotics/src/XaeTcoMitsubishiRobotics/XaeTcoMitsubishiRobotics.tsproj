@@ -2146,7 +2146,7 @@ External Setpoint Generation:
 		<ImageData Id="1008">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 		<ImageData Id="1009">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ff000000000000ff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ff000000ff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ff000000ff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ff000000000000ff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 	</ImageDatas>
-	<Project ProjectGUID="{9BFBEFCD-1854-47BE-9BE2-2F97411A783B}" ShowHideConfigurations="#x106">
+	<Project ProjectGUID="{9BFBEFCD-1854-47BE-9BE2-2F97411A783B}" Target64Bit="true" ShowHideConfigurations="#x106">
 		<System>
 			<Settings MaxCpus="2" NonWinCpus="1">
 				<Cpu CpuId="1"/>
@@ -2827,7 +2827,7 @@ External Setpoint Generation:
 		</Motion>
 		<Plc>
 			<Project GUID="{3378ED7E-C651-454F-A6A3-91EFE59C7B89}" Name="TcoMitsubishiRobotics" PrjFilePath="TcoMitsubishiRobotics\TcoMitsubishiRobotics.plcproj" TmcFilePath="TcoMitsubishiRobotics\TcoMitsubishiRobotics.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{1C37EFF0-7AE4-4E85-8BA5-5ECEFDBAE8ED}" TmcPath="TcoMitsubishiRobotics\TcoMitsubishiRobotics.tmc">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{AAF9B75B-B68A-38C1-1584-A3FB33E6C00C}" TmcPath="TcoMitsubishiRobotics\TcoMitsubishiRobotics.tmc">
 					<Name>TcoMitsubishiRobotics Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>
@@ -2847,7 +2847,7 @@ External Setpoint Generation:
 				</Instance>
 			</Project>
 			<Project GUID="{974C1006-62D3-48EB-8124-17F82E1EB01C}" Name="TcoMitsubishiRoboticsTests" PrjFilePath="TcoMitsubishiRoboticsTests\TcoMitsubishiRoboticsTests.plcproj" TmcFilePath="TcoMitsubishiRoboticsTests\TcoMitsubishiRoboticsTests.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{874649FB-8C94-F796-CBB1-FA5D328C031F}" TmcPath="TcoMitsubishiRoboticsTests\TcoMitsubishiRoboticsTests.tmc">
+				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{6AE93167-E498-2755-1748-03EEC54572A0}" TmcPath="TcoMitsubishiRoboticsTests\TcoMitsubishiRoboticsTests.tmc">
 					<Name>TcoMitsubishiRoboticsTests Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="2" AreaNo="1">

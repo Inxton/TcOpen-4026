@@ -73,17 +73,17 @@
 				<Instance Id="#x08502080" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{187CF98D-2463-BD7C-BE38-F2AEE3E4BBB4}" TmcPath="TcoCoreExamples\TcoCoreExamples.tmc">
 					<Name>TcoCoreExamples Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
-					<Vars VarGrpType="2" AreaNo="1">
-						<Name>PlcTask Outputs</Name>
-						<Var>
-							<Name>gMANIPULATOR_IO.Outputs</Name>
-							<Type GUID="{481A0C15-D2DB-59F6-F498-C30AA9C1998C}">ARRAY [0..7] OF BOOL</Type>
-						</Var>
-					</Vars>
 					<Vars VarGrpType="1">
 						<Name>PlcTask Inputs</Name>
 						<Var>
 							<Name>gMANIPULATOR_IO.Inputs</Name>
+							<Type GUID="{481A0C15-D2DB-59F6-F498-C30AA9C1998C}">ARRAY [0..7] OF BOOL</Type>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2" AreaNo="1">
+						<Name>PlcTask Outputs</Name>
+						<Var>
+							<Name>gMANIPULATOR_IO.Outputs</Name>
 							<Type GUID="{481A0C15-D2DB-59F6-F498-C30AA9C1998C}">ARRAY [0..7] OF BOOL</Type>
 						</Var>
 					</Vars>

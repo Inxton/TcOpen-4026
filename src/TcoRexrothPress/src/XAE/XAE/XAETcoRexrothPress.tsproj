@@ -41,7 +41,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{7056F838-A3A0-4803-B4E4-B49F60A1106B}" Name="TcoRexrothPress" PrjFilePath="TcoRexrothPress\TcoRexrothPress.plcproj" TmcFilePath="TcoRexrothPress\TcoRexrothPress.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{20DC780F-DEF8-E8A7-F05B-51A63B8DB51D}" TmcPath="TcoRexrothPress\TcoRexrothPress.tmc">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{359B6148-810B-7895-AF97-939C88915C85}" TmcPath="TcoRexrothPress\TcoRexrothPress.tmc">
 					<Name>TcoRexrothPress Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>
@@ -61,7 +61,7 @@
 				</Instance>
 			</Project>
 			<Project GUID="{1A3A997F-3A69-4755-9306-5A95A9AF73BF}" Name="TcoRexrothPressTests" PrjFilePath="TcoRexrothPressTests\TcoRexrothPressTests.plcproj" TmcFilePath="TcoRexrothPressTests\TcoRexrothPressTests.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{E1B4537E-7D2C-F6C1-496E-12310C8356E5}" TmcPath="TcoRexrothPressTests\TcoRexrothPressTests.tmc">
+				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{5161A7C8-C7D4-ED45-D0AC-BDF4AC5DB166}" TmcPath="TcoRexrothPressTests\TcoRexrothPressTests.tmc">
 					<Name>TcoRexrothPressTests Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="2" AreaNo="1">
@@ -109,10 +109,6 @@
 					</Vars>
 					<Vars VarGrpType="1">
 						<Name>PlcTask Inputs</Name>
-						<Var>
-							<Name>GVL_iXlinker.State</Name>
-							<Type>UINT</Type>
-						</Var>
 						<Var>
 							<Name>GVL_iXlinker.RexrothPress.Response.Handle</Name>
 							<Type>WORD</Type>
@@ -168,6 +164,10 @@
 						<Var>
 							<Name>GVL_iXlinker.AdsAddr</Name>
 							<Type GUID="{A785EC7B-AB96-8684-F3EC-9323F60B420C}" Namespace="TcoIo">TcoAmsAddr</Type>
+						</Var>
+						<Var>
+							<Name>GVL_iXlinker.State</Name>
+							<Type>UINT</Type>
 						</Var>
 					</Vars>
 					<Contexts>

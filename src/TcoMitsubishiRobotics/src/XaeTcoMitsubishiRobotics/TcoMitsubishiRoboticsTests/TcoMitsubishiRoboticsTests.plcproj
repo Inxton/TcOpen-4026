@@ -96,28 +96,12 @@
     </PlaceholderReference>
     <PlaceholderReference Include="TcoMitsubishiRobotics">
       <DefaultResolution>TcoMitsubishiRobotics, 0.6.0.913 (Vortex.Library)</DefaultResolution>
+      <Namespace>TcoMitsubishiRobotics</Namespace>
     </PlaceholderReference>
     <PlaceholderReference Include="TcoUtilities">
       <DefaultResolution>TcoUtilities, 0.6.0.913 (Vortex.Library)</DefaultResolution>
       <Namespace>TcoUtilities</Namespace>
     </PlaceholderReference>
-  </ItemGroup>
-  <ItemGroup>
-    <PlaceholderResolution Include="TcoAbstractions">
-      <Resolution>TcoAbstractions, 0.6.0.913 (Vortex.Library)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="TcoCore">
-      <Resolution>TcoCore, 0.6.0.913 (Vortex.Library)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="TcoIo">
-      <Resolution>TcoIo, 0.6.0.913 (Vortex.Library)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="TcoMitsubishiRobotics">
-      <Resolution>TcoMitsubishiRobotics, 0.6.0.913 (Vortex.Library)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="TcoUtilities">
-      <Resolution>TcoUtilities, 0.6.0.913 (Vortex.Library)</Resolution>
-    </PlaceholderResolution>
   </ItemGroup>
   <ItemGroup>
     <None Include="TcoMitsubishiRoboticsTests.tmc">

@@ -542,7 +542,7 @@
 			</ArrayInfo>
 		</DataType>
 	</DataTypes>
-	<Project ProjectGUID="{F9E8CB0C-87A9-4377-9234-E2ACBFE1E5FE}" ShowHideConfigurations="#x106">
+	<Project ProjectGUID="{F9E8CB0C-87A9-4377-9234-E2ACBFE1E5FE}" Target64Bit="true" ShowHideConfigurations="#x106">
 		<System>
 			<Settings MaxCpus="2" NonWinCpus="1">
 				<Cpu CpuId="1"/>
@@ -561,7 +561,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{B057D1C0-C1A0-4E87-8DE3-42F28C9DD315}" Name="TcoCognexVision" PrjFilePath="TcoCognexVision\TcoCognexVision.plcproj" TmcFilePath="TcoCognexVision\TcoCognexVision.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{A23F3716-2C7B-23DE-F131-2CC7DB57700A}" TmcPath="TcoCognexVision\TcoCognexVision.tmc">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{C90FA7FE-6C02-ABB3-937F-8488DD3790D9}" TmcPath="TcoCognexVision\TcoCognexVision.tmc">
 					<Name>TcoCognexVision Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>
@@ -581,11 +581,31 @@
 				</Instance>
 			</Project>
 			<Project GUID="{FC83BAF7-9480-4C64-8D5C-B812256F7D0A}" Name="TcoCognexVisionTests" PrjFilePath="TcoCognexVisionTests\TcoCognexVisionTests.plcproj" TmcFilePath="TcoCognexVisionTests\TcoCognexVisionTests.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{4086D3D3-D168-7472-4B23-F1518D5F5990}" TmcPath="TcoCognexVisionTests\TcoCognexVisionTests.tmc">
+				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{1E679362-271A-6E1E-F9E9-5A470E521601}" TmcPath="TcoCognexVisionTests\TcoCognexVisionTests.tmc">
 					<Name>TcoCognexVisionTests Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="2" AreaNo="1">
 						<Name>PlcTask Outputs</Name>
+						<Var>
+							<Name>MAIN.myVeryFirstTcoContextInstance.myVeryFirstInsight._status.SignalStatus.EnableResultsBuffering</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.myVeryFirstTcoContextInstance.myVeryFirstInsight._status.SignalStatus.AcknowledgeInspectionResults</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.myVeryFirstTcoContextInstance.myVeryFirstInsight._status.SignalStatus.ExtendedUserDataSet</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.myVeryFirstTcoContextInstance.myVeryFirstInsight._status.SignalStatus.ExecuteCommand</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.myVeryFirstTcoContextInstance.myVeryFirstInsight._status.SignalStatus.ClearError</Name>
+							<Type>BOOL</Type>
+						</Var>
 						<Var>
 							<Name>GVL.myVeryFirstDatamanGVL.PnIoBoxCtrl</Name>
 							<Type>UINT</Type>
@@ -701,26 +721,6 @@
 						<Var>
 							<Name>GVL.myVeryFirstInsightGVL.UserData.UserData</Name>
 							<Type GUID="{D753C2E1-3107-E7CE-854F-3E82FDAE9718}">ARRAY [0..253] OF BYTE</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.myVeryFirstTcoContextInstance.myVeryFirstInsight._status.SignalStatus.EnableResultsBuffering</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.myVeryFirstTcoContextInstance.myVeryFirstInsight._status.SignalStatus.AcknowledgeInspectionResults</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.myVeryFirstTcoContextInstance.myVeryFirstInsight._status.SignalStatus.ExtendedUserDataSet</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.myVeryFirstTcoContextInstance.myVeryFirstInsight._status.SignalStatus.ExecuteCommand</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.myVeryFirstTcoContextInstance.myVeryFirstInsight._status.SignalStatus.ClearError</Name>
-							<Type>BOOL</Type>
 						</Var>
 					</Vars>
 					<Vars VarGrpType="1">

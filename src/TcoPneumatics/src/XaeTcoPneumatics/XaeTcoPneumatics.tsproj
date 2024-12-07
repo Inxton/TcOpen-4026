@@ -11,7 +11,7 @@
 			</ArrayInfo>
 		</DataType>
 	</DataTypes>
-	<Project ProjectGUID="{2E6C2CE4-12CE-4A6F-A95F-B4C5E04FE0E4}" ShowHideConfigurations="#x106">
+	<Project ProjectGUID="{2E6C2CE4-12CE-4A6F-A95F-B4C5E04FE0E4}" Target64Bit="true" ShowHideConfigurations="#x106">
 		<System>
 			<Settings MaxCpus="2" NonWinCpus="1">
 				<Cpu CpuId="1"/>
@@ -27,7 +27,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{37585681-C225-40E0-832C-EB8E077A5CE7}" Name="TcoPneumatics" PrjFilePath="TcoPneumatics\TcoPneumatics.plcproj" TmcFilePath="TcoPneumatics\TcoPneumatics.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{2779D1CC-E7C0-FD7E-7516-EC4A0987FC54}" TmcPath="TcoPneumatics\TcoPneumatics.tmc">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{D2898E6B-2B11-7FE8-91D8-604549441CD5}" TmcPath="TcoPneumatics\TcoPneumatics.tmc">
 					<Name>TcoPneumatics Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>
@@ -39,7 +39,7 @@
 				</Instance>
 			</Project>
 			<Project GUID="{7DB1F25E-9FE8-42FD-A45E-F8FD0ACF6EA7}" Name="TcoPneumaticsTests" PrjFilePath="TcoPneumaticsTests\TcoPneumaticsTests.plcproj" TmcFilePath="TcoPneumaticsTests\TcoPneumaticsTests.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{642B837A-3C70-D9DE-EAC6-EC8F7C8F476C}" TmcPath="TcoPneumaticsTests\TcoPneumaticsTests.tmc">
+				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{9651FF4D-7DF8-97B5-7617-9407D5848996}" TmcPath="TcoPneumaticsTests\TcoPneumaticsTests.tmc">
 					<Name>TcoPneumaticsTests Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="2" AreaNo="1">

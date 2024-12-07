@@ -205,53 +205,6 @@
 				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{749A3BE3-6531-859A-4102-5AE2295B2B22}" TmcPath="TcoTixonFeedingTests\TcoTixonFeedingTests.tmc">
 					<Name>TcoTixonFeedingTests Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
-					<Vars VarGrpType="2" AreaNo="1">
-						<Name>PlcTask1 Outputs</Name>
-						<Var>
-							<Name>GVL_iXlinker.ECAT_x.EK1200.QA1.Channel_1.Output</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_iXlinker.ECAT_x.EK1200.QA1.Channel_2.Output</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_iXlinker.ECAT_x.EK1200.QA1.Channel_3.Output</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_iXlinker.ECAT_x.EK1200.QA1.Channel_4.Output</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_iXlinker.ECAT_x.EK1200.QA1.Channel_5.Output</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_iXlinker.ECAT_x.EK1200.QA1.Channel_6.Output</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_iXlinker.ECAT_x.EK1200.QA1.Channel_7.Output</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_iXlinker.ECAT_x.EK1200.QA1.Channel_8.Output</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_iXlinker.ECAT_x.Outputs.DevCtrl</Name>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_iXlinker.ECAT_x.Outputs.Frm0Ctrl</Name>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_iXlinker.ECAT_x.Outputs.Frm0WcCtrl</Name>
-							<Type>UINT</Type>
-						</Var>
-					</Vars>
 					<Vars VarGrpType="1">
 						<Name>PlcTask1 Inputs</Name>
 						<Var>
@@ -381,6 +334,53 @@
 						<Var>
 							<Name>GVL_iXlinker.ECAT_x.InfoData.DcToExtTimeOffset</Name>
 							<Type>LINT</Type>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2" AreaNo="1">
+						<Name>PlcTask1 Outputs</Name>
+						<Var>
+							<Name>GVL_iXlinker.ECAT_x.EK1200.QA1.Channel_1.Output</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_iXlinker.ECAT_x.EK1200.QA1.Channel_2.Output</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_iXlinker.ECAT_x.EK1200.QA1.Channel_3.Output</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_iXlinker.ECAT_x.EK1200.QA1.Channel_4.Output</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_iXlinker.ECAT_x.EK1200.QA1.Channel_5.Output</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_iXlinker.ECAT_x.EK1200.QA1.Channel_6.Output</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_iXlinker.ECAT_x.EK1200.QA1.Channel_7.Output</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_iXlinker.ECAT_x.EK1200.QA1.Channel_8.Output</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_iXlinker.ECAT_x.Outputs.DevCtrl</Name>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_iXlinker.ECAT_x.Outputs.Frm0Ctrl</Name>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_iXlinker.ECAT_x.Outputs.Frm0WcCtrl</Name>
+							<Type>UINT</Type>
 						</Var>
 					</Vars>
 					<UnrestoredVarLinks ImportTime="2023-10-11T12:26:29">
