@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Inxton.Vortex.Presentation.Controls.Blazor-experimental" Version="3.0.1-alpha.1089" />
+    <PackageReference Include="Inxton.Vortex.Presentation.Controls.Blazor-experimental" Version="3.0.2-alpha.1092" />
 	<PackageReference Include="Blazm.Components" Version="1.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="5.0.17" />
