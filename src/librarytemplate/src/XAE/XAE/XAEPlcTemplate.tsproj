@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.32">
-	<Project ProjectGUID="{F9E8CB0C-87A9-4377-9234-E2ACBFE1E5FE}" Target64Bit="true" ShowHideConfigurations="#x106">
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4026.12">
+	<Project ProjectGUID="{F9E8CB0C-87A9-4377-9234-E2ACBFE1E5FE}" ShowHideConfigurations="#x106">
 		<System>
 			<Settings MaxCpus="2" NonWinCpus="1">
 				<Cpu CpuId="1"/>
@@ -16,12 +16,12 @@
 		</System>
 		<Plc>
 			<Project GUID="{711D4247-A0B7-46C4-92AB-BEA8CAD07A56}" Name="PlcTemplate" PrjFilePath="PlcTemplate\PlcTemplate.plcproj" TmcFilePath="PlcTemplate\PlcTemplate.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PlcTemplate\PlcTemplate.tmc" TmcHash="{C0DBD37F-61D1-B9F2-AE1B-F4A24ADE82F1}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{11898AD7-00B2-A8A6-9247-211E207E7D1B}" TmcPath="PlcTemplate\PlcTemplate.tmc">
 					<Name>PlcTemplate Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>
 						<Context>
-							<Id NeedCalleeCall="true">0</Id>
+							<Id>0</Id>
 							<Name>PlcTask</Name>
 							<ManualConfig>
 								<OTCID>#x02010030</OTCID>
@@ -36,12 +36,12 @@
 				</Instance>
 			</Project>
 			<Project GUID="{CFBC043B-C3FB-403E-B3EC-38B73B6C9F17}" Name="PlcTemplateTests" PrjFilePath="PlcTemplateTests\PlcTemplateTests.plcproj" TmcFilePath="PlcTemplateTests\PlcTemplateTests.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PlcTemplateTests\PlcTemplateTests.tmc" TmcHash="{28B73C6A-C88C-9569-A940-4DA9862D1461}">
+				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{5767F75F-CCE8-E699-2C36-2BDF07D0382C}" TmcPath="PlcTemplateTests\PlcTemplateTests.tmc">
 					<Name>PlcTemplateTests Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>
 						<Context>
-							<Id NeedCalleeCall="true">0</Id>
+							<Id>0</Id>
 							<Name>PlcTask</Name>
 							<ManualConfig>
 								<OTCID>#x02010040</OTCID>

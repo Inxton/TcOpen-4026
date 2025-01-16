@@ -9,7 +9,7 @@
     <WriteProductVersion>true</WriteProductVersion>
     <GenerateTpy>false</GenerateTpy>
     <Name>PlcTcProberTests</Name>
-    <ProgramVersion>3.1.4023.0</ProgramVersion>
+    <ProgramVersion>3.1.4026.12</ProgramVersion>
     <Application>{426bad30-cf35-4497-b87a-d5d9f4190a23}</Application>
     <TypeSystem>{0b8350bc-8dee-42c3-b99b-b07c9a298389}</TypeSystem>
     <Implicit_Task_Info>{2b222112-0555-4b00-8865-918002a29dcf}</Implicit_Task_Info>
