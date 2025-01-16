@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.55">
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4026.12">
 	<DataTypes>
 		<DataType>
 			<Name GUID="{06A8B08A-172A-D3FE-B359-EA3924B01CA5}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..245] OF BYTE</Name>
@@ -542,9 +542,9 @@
 			</ArrayInfo>
 		</DataType>
 	</DataTypes>
-	<Project ProjectGUID="{F9E8CB0C-87A9-4377-9234-E2ACBFE1E5FE}" TargetNetId="192.168.4.1.1.1" Target64Bit="true" ShowHideConfigurations="#x106">
+	<Project ProjectGUID="{F9E8CB0C-87A9-4377-9234-E2ACBFE1E5FE}" ShowHideConfigurations="#x106">
 		<System>
-			<Settings MaxCpus="16">
+			<Settings MaxCpus="2" NonWinCpus="1">
 				<Cpu CpuId="1"/>
 			</Settings>
 			<Tasks>
@@ -561,7 +561,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{B057D1C0-C1A0-4E87-8DE3-42F28C9DD315}" Name="TcoCognexVision" PrjFilePath="TcoCognexVision\TcoCognexVision.plcproj" TmcFilePath="TcoCognexVision\TcoCognexVision.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="TcoCognexVision\TcoCognexVision.tmc" TmcHash="{A23F3716-2C7B-23DE-F131-2CC7DB57700A}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{C90FA7FE-6C02-ABB3-937F-8488DD3790D9}" TmcPath="TcoCognexVision\TcoCognexVision.tmc">
 					<Name>TcoCognexVision Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>
@@ -581,9 +581,148 @@
 				</Instance>
 			</Project>
 			<Project GUID="{FC83BAF7-9480-4C64-8D5C-B812256F7D0A}" Name="TcoCognexVisionTests" PrjFilePath="TcoCognexVisionTests\TcoCognexVisionTests.plcproj" TmcFilePath="TcoCognexVisionTests\TcoCognexVisionTests.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="TcoCognexVisionTests\TcoCognexVisionTests.tmc" TmcHash="{4086D3D3-D168-7472-4B23-F1518D5F5990}">
+				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{1E679362-271A-6E1E-F9E9-5A470E521601}" TmcPath="TcoCognexVisionTests\TcoCognexVisionTests.tmc">
 					<Name>TcoCognexVisionTests Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<Vars VarGrpType="2" AreaNo="1">
+						<Name>PlcTask Outputs</Name>
+						<Var>
+							<Name>MAIN.myVeryFirstTcoContextInstance.myVeryFirstInsight._status.SignalStatus.EnableResultsBuffering</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.myVeryFirstTcoContextInstance.myVeryFirstInsight._status.SignalStatus.AcknowledgeInspectionResults</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.myVeryFirstTcoContextInstance.myVeryFirstInsight._status.SignalStatus.ExtendedUserDataSet</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.myVeryFirstTcoContextInstance.myVeryFirstInsight._status.SignalStatus.ExecuteCommand</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.myVeryFirstTcoContextInstance.myVeryFirstInsight._status.SignalStatus.ClearError</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstDatamanGVL.PnIoBoxCtrl</Name>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstDatamanGVL.AcquisitionControl.TriggerEnable</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstDatamanGVL.AcquisitionControl.Trigger</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstDatamanGVL.ResultsControl.EnableResultBuffering</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstDatamanGVL.ResultsControl.ResultsAcknowledge</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstDatamanGVL.SoftEventControl.TrainCode</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstDatamanGVL.SoftEventControl.TrainMatchString</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstDatamanGVL.SoftEventControl.TrainFocus</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstDatamanGVL.SoftEventControl.TrainBrightness</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstDatamanGVL.SoftEventControl.Untrain</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstDatamanGVL.SoftEventControl.Reserved15</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstDatamanGVL.SoftEventControl.ExecuteDMCC</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstDatamanGVL.SoftEventControl.SetMatchString</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstDatamanGVL.UserData.UserDataOption</Name>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstDatamanGVL.UserData.UserDataLength</Name>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstDatamanGVL.UserData.UserData</Name>
+							<Type GUID="{BCF24EA7-0253-16F6-579C-6A096146D209}">ARRAY [0..249] OF BYTE</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstInsightGVL.PnIoBoxCtrl</Name>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstInsightGVL.AcquisitionControl.AcquisitionTriggerEnable</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstInsightGVL.AcquisitionControl.AcquisitionTrigger</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstInsightGVL.AcquisitionControl.ClearExposureComplete</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstInsightGVL.AcquisitionControl.SetOffline</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstInsightGVL.InspectionControl.EnableResultsBuffering</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstInsightGVL.InspectionControl.AcknowledgeInspectionResults</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstInsightGVL.InspectionControl.ExtendedUserDataSet</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstInsightGVL.InspectionControl.ExecuteCommand</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstInsightGVL.InspectionControl.ClearError</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstInsightGVL.CommandControl.Command</Name>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstInsightGVL.SoftEventControl.TriggerSoftEvent</Name>
+							<Type GUID="{481A0C15-D2DB-59F6-F498-C30AA9C1998C}">ARRAY [0..7] OF BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.myVeryFirstInsightGVL.UserData.UserData</Name>
+							<Type GUID="{D753C2E1-3107-E7CE-854F-3E82FDAE9718}">ARRAY [0..253] OF BYTE</Type>
+						</Var>
+					</Vars>
 					<Vars VarGrpType="1">
 						<Name>PlcTask Inputs</Name>
 						<Var>
@@ -799,145 +938,6 @@
 							<Type GUID="{06A8B08A-172A-D3FE-B359-EA3924B01CA5}">ARRAY [0..245] OF BYTE</Type>
 						</Var>
 					</Vars>
-					<Vars VarGrpType="2" AreaNo="1">
-						<Name>PlcTask Outputs</Name>
-						<Var>
-							<Name>GVL.myVeryFirstDatamanGVL.PnIoBoxCtrl</Name>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstDatamanGVL.AcquisitionControl.TriggerEnable</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstDatamanGVL.AcquisitionControl.Trigger</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstDatamanGVL.ResultsControl.EnableResultBuffering</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstDatamanGVL.ResultsControl.ResultsAcknowledge</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstDatamanGVL.SoftEventControl.TrainCode</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstDatamanGVL.SoftEventControl.TrainMatchString</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstDatamanGVL.SoftEventControl.TrainFocus</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstDatamanGVL.SoftEventControl.TrainBrightness</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstDatamanGVL.SoftEventControl.Untrain</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstDatamanGVL.SoftEventControl.Reserved15</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstDatamanGVL.SoftEventControl.ExecuteDMCC</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstDatamanGVL.SoftEventControl.SetMatchString</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstDatamanGVL.UserData.UserDataOption</Name>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstDatamanGVL.UserData.UserDataLength</Name>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstDatamanGVL.UserData.UserData</Name>
-							<Type GUID="{BCF24EA7-0253-16F6-579C-6A096146D209}">ARRAY [0..249] OF BYTE</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstInsightGVL.PnIoBoxCtrl</Name>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstInsightGVL.AcquisitionControl.AcquisitionTriggerEnable</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstInsightGVL.AcquisitionControl.AcquisitionTrigger</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstInsightGVL.AcquisitionControl.ClearExposureComplete</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstInsightGVL.AcquisitionControl.SetOffline</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstInsightGVL.InspectionControl.EnableResultsBuffering</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstInsightGVL.InspectionControl.AcknowledgeInspectionResults</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstInsightGVL.InspectionControl.ExtendedUserDataSet</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstInsightGVL.InspectionControl.ExecuteCommand</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstInsightGVL.InspectionControl.ClearError</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstInsightGVL.CommandControl.Command</Name>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstInsightGVL.SoftEventControl.TriggerSoftEvent</Name>
-							<Type GUID="{481A0C15-D2DB-59F6-F498-C30AA9C1998C}">ARRAY [0..7] OF BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.myVeryFirstInsightGVL.UserData.UserData</Name>
-							<Type GUID="{D753C2E1-3107-E7CE-854F-3E82FDAE9718}">ARRAY [0..253] OF BYTE</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.myVeryFirstTcoContextInstance.myVeryFirstInsight._status.SignalStatus.EnableResultsBuffering</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.myVeryFirstTcoContextInstance.myVeryFirstInsight._status.SignalStatus.AcknowledgeInspectionResults</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.myVeryFirstTcoContextInstance.myVeryFirstInsight._status.SignalStatus.ExtendedUserDataSet</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.myVeryFirstTcoContextInstance.myVeryFirstInsight._status.SignalStatus.ExecuteCommand</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.myVeryFirstTcoContextInstance.myVeryFirstInsight._status.SignalStatus.ClearError</Name>
-							<Type>BOOL</Type>
-						</Var>
-					</Vars>
 					<Contexts>
 						<Context>
 							<Id>0</Id>
@@ -958,7 +958,13 @@
 		<Io>
 			<Device Id="1" Disabled="true" DevType="113" AmsPort="28673" AmsNetId="192.168.4.1.2.1" RemoteName="Device 1 (Profinet Controller)">
 				<Name>Device 1 (Profinet Controller)</Name>
-				<DevData>000000000000000000000000000000005c4445564943455c7b39383041424339332d314131322d343233322d394530362d3830313830393033454137377d00000000000000000200681e14ac00ffffff000105390b11040000000000000000000000000000000000000000000000000000000000000000000000000000000000</DevData>
+				<AddressInfo>
+					<Pnp>
+						<DeviceDesc>X000_LAN (TwinCAT-Intel PCI Ethernet Adapter (Gigab</DeviceDesc>
+						<DeviceName>\DEVICE\{980ABC93-1A12-4232-9E06-80180903EA77}</DeviceName>
+						<DeviceData>000105390b11</DeviceData>
+					</Pnp>
+				</AddressInfo>
 				<Image Id="1" AddrType="1" ImageType="3" SizeIn="2" SizeOut="6">
 					<Name>Image</Name>
 				</Image>

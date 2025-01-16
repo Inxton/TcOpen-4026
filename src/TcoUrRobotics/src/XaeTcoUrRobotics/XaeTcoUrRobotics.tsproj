@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.44">
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4026.12">
 	<DataTypes>
 		<DataType>
 			<Name GUID="{A6CC6AFE-FE37-C02D-2C0C-FB1479660FEB}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..31] OF BYTE</Name>
@@ -56,6 +56,15 @@
 			</ArrayInfo>
 		</DataType>
 		<DataType>
+			<Name GUID="{481A0C15-D2DB-59F6-F498-C30AA9C1998C}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..7] OF BOOL</Name>
+			<BitSize>64</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000030}">BOOL</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>8</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
 			<Name GUID="{91D0C5E9-2F35-4609-1E02-F7DADE381EE2}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..23] OF BYTE</Name>
 			<BitSize>192</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
@@ -74,16 +83,7 @@
 			</ArrayInfo>
 		</DataType>
 		<DataType>
-			<Name GUID="{481A0C15-D2DB-59F6-F498-C30AA9C1998C}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..7] OF BOOL</Name>
-			<BitSize>64</BitSize>
-			<BaseType GUID="{18071995-0000-0000-0000-000000000030}">BOOL</BaseType>
-			<ArrayInfo>
-				<LBound>0</LBound>
-				<Elements>8</Elements>
-			</ArrayInfo>
-		</DataType>
-		<DataType>
-			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
+			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
 			<BitSize>1</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
 			<ArrayInfo>
@@ -92,7 +92,7 @@
 			</ArrayInfo>
 		</DataType>
 		<DataType>
-			<Name GUID="{18071995-0000-0000-0000-002000000006}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..5] OF BIT</Name>
+			<Name GUID="{18071995-0000-0000-0000-002000000006}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..5] OF BIT</Name>
 			<BitSize>6</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
 			<ArrayInfo>
@@ -296,9 +296,11 @@
 		<ImageData Id="1008">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 		<ImageData Id="1009">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ff000000000000ff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ff000000ff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ff000000ff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ff000000000000ff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 	</ImageDatas>
-	<Project ProjectGUID="{9BFBEFCD-1854-47BE-9BE2-2F97411A783B}" TargetNetId="192.168.4.1.1.1" Target64Bit="true" ShowHideConfigurations="#x106">
+	<Project ProjectGUID="{9BFBEFCD-1854-47BE-9BE2-2F97411A783B}" ShowHideConfigurations="#x106">
 		<System>
-			<Settings MaxCpus="2"/>
+			<Settings MaxCpus="2" NonWinCpus="1">
+				<Cpu CpuId="1"/>
+			</Settings>
 			<Tasks>
 				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
 					<Name>PlcTask</Name>
@@ -322,12 +324,12 @@
 		</System>
 		<Plc>
 			<Project GUID="{D979D980-7689-4F72-A7B2-277F60EA6770}" Name="TcoUrRobotics" PrjFilePath="TcoUrRobotics\TcoUrRobotics.plcproj" TmcFilePath="TcoUrRobotics\TcoUrRobotics.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="TcoUrRobotics\TcoUrRobotics.tmc" TmcHash="{DA6AE57F-FAB8-29A5-E3B1-7672DFABBBD0}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{37D96FCF-6B4A-0C90-F6BA-18B5B968A69A}" TmcPath="TcoUrRobotics\TcoUrRobotics.tmc">
 					<Name>TcoUrRobotics Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>
 						<Context>
-							<Id NeedCalleeCall="true">0</Id>
+							<Id>0</Id>
 							<Name>PlcTask</Name>
 							<ManualConfig>
 								<OTCID>#x02010030</OTCID>
@@ -342,9 +344,48 @@
 				</Instance>
 			</Project>
 			<Project GUID="{EF5C2F9B-C2D8-4E57-8889-660FBFCE8A20}" Name="TcoUrRoboticsTests" PrjFilePath="TcoUrRoboticsTests\TcoUrRoboticsTests.plcproj" TmcFilePath="TcoUrRoboticsTests\TcoUrRoboticsTests.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="TcoUrRoboticsTests\TcoUrRoboticsTests.tmc" TmcHash="{322C509A-12F7-64FB-19B6-92EE1DA0C7A3}">
+				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{E601585F-FD60-5AE5-3AAE-E5C56A710BEF}" TmcPath="TcoUrRoboticsTests\TcoUrRoboticsTests.tmc">
 					<Name>TcoUrRoboticsTests Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<Vars VarGrpType="2" AreaNo="1">
+						<Name>PlcTask1 Outputs</Name>
+						<Var>
+							<Name>GVL.A2</Name>
+							<Type GUID="{481A0C15-D2DB-59F6-F498-C30AA9C1998C}">ARRAY [0..7] OF BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.Robot1.PnIoBoxCtrl</Name>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL.Robot1.Out.RobotIO.bArray</Name>
+							<Type GUID="{91D0C5E9-2F35-4609-1E02-F7DADE381EE2}">ARRAY [0..23] OF BYTE</Type>
+						</Var>
+						<Var>
+							<Name>GVL.Robot1.Out.Reg1.bArray</Name>
+							<Type GUID="{CEF12769-C02E-89C0-2271-5247D92690FB}">ARRAY [0..99] OF BYTE</Type>
+						</Var>
+						<Var>
+							<Name>GVL.Robot1.Out.Reg2.bArray</Name>
+							<Type GUID="{CEF12769-C02E-89C0-2271-5247D92690FB}">ARRAY [0..99] OF BYTE</Type>
+						</Var>
+						<Var>
+							<Name>GVL.Robot2.PnIoBoxCtrl</Name>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL.Robot2.Out.RobotIO.bArray</Name>
+							<Type GUID="{91D0C5E9-2F35-4609-1E02-F7DADE381EE2}">ARRAY [0..23] OF BYTE</Type>
+						</Var>
+						<Var>
+							<Name>GVL.Robot2.Out.Reg1.bArray</Name>
+							<Type GUID="{CEF12769-C02E-89C0-2271-5247D92690FB}">ARRAY [0..99] OF BYTE</Type>
+						</Var>
+						<Var>
+							<Name>GVL.Robot2.Out.Reg2.bArray</Name>
+							<Type GUID="{CEF12769-C02E-89C0-2271-5247D92690FB}">ARRAY [0..99] OF BYTE</Type>
+						</Var>
+					</Vars>
 					<Vars VarGrpType="1">
 						<Name>PlcTask1 Inputs</Name>
 						<Var>
@@ -418,45 +459,6 @@
 						<Var>
 							<Name>GVL.Robot2.In.FloatRegs.bArray</Name>
 							<Type GUID="{E02286BA-9296-CB03-8D71-5D3D920D6A13}">ARRAY [0..95] OF BYTE</Type>
-						</Var>
-					</Vars>
-					<Vars VarGrpType="2" AreaNo="1">
-						<Name>PlcTask1 Outputs</Name>
-						<Var>
-							<Name>GVL.Robot1.PnIoBoxCtrl</Name>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL.Robot1.Out.RobotIO.bArray</Name>
-							<Type GUID="{91D0C5E9-2F35-4609-1E02-F7DADE381EE2}">ARRAY [0..23] OF BYTE</Type>
-						</Var>
-						<Var>
-							<Name>GVL.Robot1.Out.Reg1.bArray</Name>
-							<Type GUID="{CEF12769-C02E-89C0-2271-5247D92690FB}">ARRAY [0..99] OF BYTE</Type>
-						</Var>
-						<Var>
-							<Name>GVL.Robot1.Out.Reg2.bArray</Name>
-							<Type GUID="{CEF12769-C02E-89C0-2271-5247D92690FB}">ARRAY [0..99] OF BYTE</Type>
-						</Var>
-						<Var>
-							<Name>GVL.Robot2.PnIoBoxCtrl</Name>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL.Robot2.Out.RobotIO.bArray</Name>
-							<Type GUID="{91D0C5E9-2F35-4609-1E02-F7DADE381EE2}">ARRAY [0..23] OF BYTE</Type>
-						</Var>
-						<Var>
-							<Name>GVL.Robot2.Out.Reg1.bArray</Name>
-							<Type GUID="{CEF12769-C02E-89C0-2271-5247D92690FB}">ARRAY [0..99] OF BYTE</Type>
-						</Var>
-						<Var>
-							<Name>GVL.Robot2.Out.Reg2.bArray</Name>
-							<Type GUID="{CEF12769-C02E-89C0-2271-5247D92690FB}">ARRAY [0..99] OF BYTE</Type>
-						</Var>
-						<Var>
-							<Name>GVL.A2</Name>
-							<Type GUID="{481A0C15-D2DB-59F6-F498-C30AA9C1998C}">ARRAY [0..7] OF BOOL</Type>
 						</Var>
 					</Vars>
 					<UnrestoredVarLinks ImportTime="2023-08-07T09:39:45">
@@ -634,7 +636,7 @@
 					</UnrestoredVarLinks>
 					<Contexts>
 						<Context>
-							<Id NeedCalleeCall="true">0</Id>
+							<Id>0</Id>
 							<Name>PlcTask1</Name>
 							<ManualConfig>
 								<OTCID>#x02010060</OTCID>
@@ -2044,7 +2046,7 @@ Bit 8 - 15 : reserved]]></Comment>
 				</Box>
 				<EtherCAT DcSyncMode="3" EnableVirtualSwitch="true" MaxSwitchPorts="2" MaxSwitchFrames="120" MaxSwitchMACs="100"/>
 			</Device>
-			<Device Id="2" DevType="111" DevFlags="#x0003" AmsPort="28674" AmsNetId="192.168.4.1.3.1" RemoteName="Device 2 (EtherCAT)" InfoImageId="7">
+			<Device Id="2" Disabled="true" DevType="111" DevFlags="#x0003" AmsPort="28674" AmsNetId="192.168.4.1.3.1" RemoteName="Device 2 (EtherCAT)" InfoImageId="7">
 				<Name>Device 2 (EtherCAT)</Name>
 				<AddressInfo>
 					<Ccat>
@@ -3908,15 +3910,24 @@ Bit 8 - 15 : reserved]]></Comment>
 				</Box>
 				<EtherCAT/>
 			</Device>
-			<Device Id="5" DevType="113" AmsPort="28677" AmsNetId="192.168.4.1.6.1" RemoteName="Device 5 (Profinet Controller)">
+			<Device Id="5" Disabled="true" DevType="113" AmsPort="28677" AmsNetId="192.168.4.1.6.1" RemoteName="Device 5 (Profinet Controller)">
 				<Name>Device 5 (Profinet Controller)</Name>
-				<DevData>000000000000000000000000a08601005c4445564943455c7b45414643393630312d453041302d343533322d394635392d3933384541464141344437447d000000000000000001000104a8c000ffffff0001056fc1bd040000000000000000000000000000000000000000000000000000000000000000000000000000000000</DevData>
-				<Image Id="10" AddrType="1" ImageType="3" SizeIn="228" SizeOut="490">
+				<AddressInfo>
+					<Pnp>
+						<DeviceDesc>LAN (TwinCAT-Intel PCI Ethernet Adapter (Gigabit) #</DeviceDesc>
+						<DeviceName>\DEVICE\{EAFC9601-E0A0-4532-9F59-938EAFAA4D7D}</DeviceName>
+						<DeviceData>0001056fc1bd</DeviceData>
+					</Pnp>
+				</AddressInfo>
+				<Image Id="10" AddrType="1" ImageType="3" SizeIn="2" SizeOut="6">
 					<Name>Image</Name>
 				</Image>
 				<Box Id="11" BoxType="9121">
 					<Name>ur-op-80r</Name>
-					<Comment><![CDATA[GSDML Name: GSDML-V2.42-UR-PROFIsafe-20220517.xml
+					<Comment><![CDATA[
+The GSDML is not available!
+
+GSDML Name: GSDML-V2.42-UR-PROFIsafe-20220517.xml
 Path: $(TWINCAT3DIR)Config\Io\Profinet\
 VendorName: Universal Robots A/S
 OrderNumber: 0000201
@@ -4367,8 +4378,6 @@ Submodule Info: Write General Purpose Registers 2
 		</Io>
 	</Project>
 	<Mappings>
-		<MappingInfo Identifier="{00000000-2041-0850-4020-500860000403}" Id="#x02030010"/>
-		<MappingInfo Identifier="{00000000-2041-0850-4020-5008A0000403}" Id="#x02030020"/>
 		<OwnerA Name="TIPC^TcoUrRoboticsTests^TcoUrRoboticsTests Instance">
 			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1200)^Term 13 (EL2809)">
 				<Link VarA="PlcTask1 Outputs^GVL.A2[0]" VarB="Channel 1^Output"/>
