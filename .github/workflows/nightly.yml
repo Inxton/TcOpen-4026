@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: [self-hosted, TcOpen]
     timeout-minutes: 180
     steps:
       - uses: actions/checkout@v2

@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: [self-hosted, TcOpen]
     timeout-minutes: 60
     steps:
       - name: Checkout main repo
