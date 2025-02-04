@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4026.8">
   <POU Name="TcoIrc5_v_1_x_x" Id="{f69c7d84-668d-0b04-12d8-3ba5e065c73c}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK TcoIrc5_v_1_x_x EXTENDS TcoIo.TcoPnIoComponent  IMPLEMENTS TcoAbstractions.ITcoRobotics
 VAR_INPUT
@@ -184,9 +184,9 @@ PROPERTY Config : REFERENCE TO TcoAbbRobotics_Config_v_1_x_x]]></Declaration>
         </Implementation>
       </Get>
     </Property>
-    <Property Name="Control" Id="{17acc0e5-2533-08c0-15cf-e005baee4a02}">
+    <Property Name="Control" Id="{8c9dde88-9d82-0470-03ba-a919cfcab7be}">
       <Declaration><![CDATA[PROPERTY PUBLIC Control : REFERENCE TO TcoAbbRobotics_Control_v_1_x_x]]></Declaration>
-      <Get Name="Get" Id="{ab4eb822-d0f8-0dcf-28c6-9c66791555b8}">
+      <Get Name="Get" Id="{665d7a28-1df0-021b-1694-8da0059cb9c3}">
         <Declaration><![CDATA[VAR
 END_VAR
 ]]></Declaration>

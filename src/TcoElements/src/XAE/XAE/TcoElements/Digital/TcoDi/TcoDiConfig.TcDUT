@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
-  <DUT Name="TcoDiConfig" Id="{1c92b9c3-fdc0-058b-14b1-2a2480e88490}">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4026.8">
+  <DUT Name="TcoDiConfig" Id="{94f7ac71-8bb7-00e4-3f17-566f5e98c292}">
     <Declaration><![CDATA[TYPE TcoDiConfig :
 STRUCT
 	IsFalseTimeOut : TIME := T#10S;

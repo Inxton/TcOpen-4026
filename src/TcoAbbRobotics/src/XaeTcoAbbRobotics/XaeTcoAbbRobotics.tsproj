@@ -207,7 +207,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{66B028FC-1645-4333-BD8B-FD99CB41F267}" Name="TcoAbbRobotics" PrjFilePath="TcoAbbRobotics\TcoAbbRobotics.plcproj" TmcFilePath="TcoAbbRobotics\TcoAbbRobotics.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{82E1996F-AD52-4F80-7273-DA4610B676F1}" TmcPath="TcoAbbRobotics\TcoAbbRobotics.tmc">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{725CE444-9BEA-7DB5-1877-0CF13627A593}" TmcPath="TcoAbbRobotics\TcoAbbRobotics.tmc">
 					<Name>TcoAbbRobotics Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>
@@ -227,7 +227,7 @@
 				</Instance>
 			</Project>
 			<Project GUID="{7F3BB913-B542-4FF5-83A6-0A5E9DB27A3F}" Name="TcoAbbRoboticsTests" PrjFilePath="TcoAbbRoboticsTests\TcoAbbRoboticsTests.plcproj" TmcFilePath="TcoAbbRoboticsTests\TcoAbbRoboticsTests.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{AADF2C19-0BFF-3685-B896-E855CDD47643}" TmcPath="TcoAbbRoboticsTests\TcoAbbRoboticsTests.tmc">
+				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{98BE88A8-55B5-CCF3-838E-AD2BDCA665DA}" TmcPath="TcoAbbRoboticsTests\TcoAbbRoboticsTests.tmc">
 					<Name>TcoAbbRoboticsTests Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="2" AreaNo="1">

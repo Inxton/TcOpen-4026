@@ -16,7 +16,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{E1A3BB78-5E60-4D4D-945B-594757F57C84}" Name="TcoInspectors" PrjFilePath="TcoInspectors\TcoInspectors.plcproj" TmcFilePath="TcoInspectors\TcoInspectors.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{41AC4E9B-455A-B882-3D4F-59EDB9EFA48B}" TmcPath="TcoInspectors\TcoInspectors.tmc">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{E0E92CF9-66E4-BEE9-AD46-2482915AD1EB}" TmcPath="TcoInspectors\TcoInspectors.tmc">
 					<Name>TcoInspectors Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>
@@ -36,7 +36,7 @@
 				</Instance>
 			</Project>
 			<Project GUID="{E673B74A-2441-4259-BB0C-1ACE02A8C111}" Name="TcoInspectorsTests" PrjFilePath="TcoInspectorsTests\TcoInspectorsTests.plcproj" TmcFilePath="TcoInspectorsTests\TcoInspectorsTests.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{2F0D87D3-B4B9-1B4E-F5E7-16457A255EE6}" TmcPath="TcoInspectorsTests\TcoInspectorsTests.tmc">
+				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{B4B24133-B707-3423-B5C2-BEA2253229A0}" TmcPath="TcoInspectorsTests\TcoInspectorsTests.tmc">
 					<Name>TcoInspectorsTests Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>

@@ -561,7 +561,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{B057D1C0-C1A0-4E87-8DE3-42F28C9DD315}" Name="TcoCognexVision" PrjFilePath="TcoCognexVision\TcoCognexVision.plcproj" TmcFilePath="TcoCognexVision\TcoCognexVision.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{C90FA7FE-6C02-ABB3-937F-8488DD3790D9}" TmcPath="TcoCognexVision\TcoCognexVision.tmc">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{6698CCD7-A461-72A0-0A75-CF6454C42271}" TmcPath="TcoCognexVision\TcoCognexVision.tmc">
 					<Name>TcoCognexVision Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>
@@ -581,7 +581,7 @@
 				</Instance>
 			</Project>
 			<Project GUID="{FC83BAF7-9480-4C64-8D5C-B812256F7D0A}" Name="TcoCognexVisionTests" PrjFilePath="TcoCognexVisionTests\TcoCognexVisionTests.plcproj" TmcFilePath="TcoCognexVisionTests\TcoCognexVisionTests.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{1E679362-271A-6E1E-F9E9-5A470E521601}" TmcPath="TcoCognexVisionTests\TcoCognexVisionTests.tmc">
+				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{659E2E6B-216E-F80B-426D-66A1790E7442}" TmcPath="TcoCognexVisionTests\TcoCognexVisionTests.tmc">
 					<Name>TcoCognexVisionTests Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="2" AreaNo="1">

@@ -2827,7 +2827,7 @@ External Setpoint Generation:
 		</Motion>
 		<Plc>
 			<Project GUID="{3378ED7E-C651-454F-A6A3-91EFE59C7B89}" Name="TcoMitsubishiRobotics" PrjFilePath="TcoMitsubishiRobotics\TcoMitsubishiRobotics.plcproj" TmcFilePath="TcoMitsubishiRobotics\TcoMitsubishiRobotics.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{AAF9B75B-B68A-38C1-1584-A3FB33E6C00C}" TmcPath="TcoMitsubishiRobotics\TcoMitsubishiRobotics.tmc">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{60398E6F-5C74-D5EB-9DF3-10ADA9D9F630}" TmcPath="TcoMitsubishiRobotics\TcoMitsubishiRobotics.tmc">
 					<Name>TcoMitsubishiRobotics Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>
@@ -2847,7 +2847,7 @@ External Setpoint Generation:
 				</Instance>
 			</Project>
 			<Project GUID="{974C1006-62D3-48EB-8124-17F82E1EB01C}" Name="TcoMitsubishiRoboticsTests" PrjFilePath="TcoMitsubishiRoboticsTests\TcoMitsubishiRoboticsTests.plcproj" TmcFilePath="TcoMitsubishiRoboticsTests\TcoMitsubishiRoboticsTests.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{6AE93167-E498-2755-1748-03EEC54572A0}" TmcPath="TcoMitsubishiRoboticsTests\TcoMitsubishiRoboticsTests.tmc">
+				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{B9852B54-31E3-28B4-9F5E-D7311B0BEA7A}" TmcPath="TcoMitsubishiRoboticsTests\TcoMitsubishiRoboticsTests.tmc">
 					<Name>TcoMitsubishiRoboticsTests Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="2" AreaNo="1">

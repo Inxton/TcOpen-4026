@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
-  <POU Name="TcoDi" Id="{940ec0d0-0377-0ad5-2841-be1fc78a02da}" SpecialFunc="None">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4026.8">
+  <POU Name="TcoDi" Id="{bf5de069-2bce-0941-20f9-c6016039be8f}" SpecialFunc="None">
     <Declaration><![CDATA[(*~
 	<docu>
 		<summary>
@@ -61,10 +61,10 @@ IF(_isFalseTask.Execute())THEN
 	_isFalseTask.DoneWhen(IsFalse);
 END_IF]]></ST>
     </Implementation>
-    <Folder Name="Status" Id="{399b397c-b6b2-0664-0b0b-0fee705f77b1}" />
-    <Property Name="Config" Id="{c8f4355b-e49f-0bb4-0646-dd6b154ddf1c}">
+    <Folder Name="Status" Id="{c4428cb0-fd59-0a4f-2daf-428d3bb2074a}" />
+    <Property Name="Config" Id="{25e45929-e9ea-09d4-3640-444122d2012b}">
       <Declaration><![CDATA[PROPERTY Config : REFERENCE TO TcoDiConfig]]></Declaration>
-      <Get Name="Get" Id="{5fd5b11d-835a-051e-285c-523188175df9}">
+      <Get Name="Get" Id="{e8ba6a27-66c4-0502-3411-22acec5c4f9c}">
         <Declaration><![CDATA[VAR
 END_VAR
 ]]></Declaration>
@@ -73,7 +73,7 @@ END_VAR
         </Implementation>
       </Get>
     </Property>
-    <Method Name="FB_init" Id="{ab66c675-5325-0f32-2184-6fc98948f748}">
+    <Method Name="FB_init" Id="{19ed8d21-d4a9-0ead-348c-2d1a64d8df68}">
       <Declaration><![CDATA[METHOD FB_init : BOOL
 VAR_INPUT
 	bInitRetains : BOOL; // if TRUE, the retain variables are initialized (warm start / cold start)
@@ -86,7 +86,7 @@ END_VAR
         <ST><![CDATA[]]></ST>
       </Implementation>
     </Method>
-    <Property Name="IsFalse" Id="{ec2f8868-7b72-099e-3c52-ecac20627405}" FolderPath="Status\">
+    <Property Name="IsFalse" Id="{a48b8e85-e237-0306-2a8e-7499646bb269}" FolderPath="Status\">
       <Declaration><![CDATA[(*~
 	<docu>
 		<summary>
@@ -97,7 +97,7 @@ END_VAR
 ~*)	
 {attribute 'monitoring' := 'variable'}
 PROPERTY IsFalse : BOOL]]></Declaration>
-      <Get Name="Get" Id="{5dc82cbc-c761-07b9-164e-01989022f16b}">
+      <Get Name="Get" Id="{67dc84bd-13ba-0bf5-1a3e-4ca2f550bba1}">
         <Declaration><![CDATA[VAR
 END_VAR
 ]]></Declaration>
@@ -109,7 +109,7 @@ IF(_isFalseTimeOutTimers.Q) THEN Messenger.Warning('<#Expecting `negative` signa
         </Implementation>
       </Get>
     </Property>
-    <Property Name="IsTrue" Id="{ab525802-f6c2-0477-297c-4b1c69c11f23}" FolderPath="Status\">
+    <Property Name="IsTrue" Id="{7615a1ac-cd7f-09b9-2231-25f7994aa4c1}" FolderPath="Status\">
       <Declaration><![CDATA[(*~
 	<docu>
 		<summary>
@@ -120,7 +120,7 @@ IF(_isFalseTimeOutTimers.Q) THEN Messenger.Warning('<#Expecting `negative` signa
 ~*)	
 {attribute 'monitoring' := 'variable'}
 PROPERTY IsTrue : BOOL]]></Declaration>
-      <Get Name="Get" Id="{260c107a-8454-0d57-3f95-b0c3b180f288}">
+      <Get Name="Get" Id="{5dd1a5fb-3672-06a9-3ede-febd03f9aca9}">
         <Declaration><![CDATA[VAR
 END_VAR
 ]]></Declaration>
@@ -133,7 +133,7 @@ IF(_isTrueTimeOutTimers.Q) THEN Messenger.Warning('<#Expecting `positive` signal
         </Implementation>
       </Get>
     </Property>
-    <Method Name="Restore" Id="{19478393-8665-053e-2aa6-99986ee029e0}">
+    <Method Name="Restore" Id="{d5ab69bd-1353-0ca8-16cf-73e6b0c3e229}">
       <Declaration><![CDATA[(*~
 	<docu>
 		<summary>
@@ -149,7 +149,7 @@ METHOD  Restore : ITcoRestorable
         <ST><![CDATA[// No implementation needed for this componet.]]></ST>
       </Implementation>
     </Method>
-    <Method Name="ServiceMode" Id="{27fb8047-ad11-0e35-19c9-b36842b34792}">
+    <Method Name="ServiceMode" Id="{08cdc714-0a76-07bb-226e-abc1b58192f5}">
       <Declaration><![CDATA[(*~
 	<docu>
 		<summary>
@@ -164,9 +164,9 @@ METHOD PROTECTED  ServiceMode
         <ST><![CDATA[]]></ST>
       </Implementation>
     </Method>
-    <Property Name="Signal" Id="{da673e5e-f603-0e32-130a-a651eb1a9294}" FolderPath="Status\">
+    <Property Name="Signal" Id="{d9e353b1-89e3-08cf-256b-2cf8972958b0}" FolderPath="Status\">
       <Declaration><![CDATA[PROPERTY PUBLIC Signal : Bool]]></Declaration>
-      <Get Name="Get" Id="{a37370b0-20e9-0540-367a-e01e45c92d06}">
+      <Get Name="Get" Id="{f695429a-215a-070a-1c9a-284dc19b9944}">
         <Declaration><![CDATA[VAR
 END_VAR
 ]]></Declaration>

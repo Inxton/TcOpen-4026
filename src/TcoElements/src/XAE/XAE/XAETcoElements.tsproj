@@ -16,7 +16,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{BF3E9621-3F23-47E0-B5CF-D3280EF53276}" Name="TcoElements" PrjFilePath="TcoElements\TcoElements.plcproj" TmcFilePath="TcoElements\TcoElements.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{2844CD9E-6DF0-E698-D0F4-1E53F613CD17}" TmcPath="TcoElements\TcoElements.tmc">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{6CD46296-19E3-9B05-5757-D0D372779BB7}" TmcPath="TcoElements\TcoElements.tmc">
 					<Name>TcoElements Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>
@@ -36,7 +36,7 @@
 				</Instance>
 			</Project>
 			<Project GUID="{84AF4B0E-F835-4083-910E-C0AA0BB9E50D}" Name="TcoElementsTests" PrjFilePath="TcoElementsTests\TcoElementsTests.plcproj" TmcFilePath="TcoElementsTests\TcoElementsTests.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{88DDA68B-3F83-3C1E-9674-58187D9B54A6}" TmcPath="TcoElementsTests\TcoElementsTests.tmc">
+				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{994B30B8-24D0-1B41-A43D-1C47D01A13A0}" TmcPath="TcoElementsTests\TcoElementsTests.tmc">
 					<Name>TcoElementsTests Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="2" AreaNo="1">

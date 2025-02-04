@@ -2779,7 +2779,7 @@ External Setpoint Generation:
 		</Motion>
 		<Plc>
 			<Project GUID="{C03634C4-AC7A-4A21-803F-218553AAE7F4}" Name="TcoDrivesBeckhoff" PrjFilePath="TcoDrivesBeckhoff\TcoDrivesBeckhoff.plcproj" TmcFilePath="TcoDrivesBeckhoff\TcoDrivesBeckhoff.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{63A647C5-E552-F8C3-ABD0-2B70B3453830}" TmcPath="TcoDrivesBeckhoff\TcoDrivesBeckhoff.tmc">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{B1B09D65-A6F3-9BEE-9ABC-E8E0E5B7CEDD}" TmcPath="TcoDrivesBeckhoff\TcoDrivesBeckhoff.tmc">
 					<Name>TcoDrivesBeckhoff Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>
@@ -2799,7 +2799,7 @@ External Setpoint Generation:
 				</Instance>
 			</Project>
 			<Project GUID="{4F0E1158-49EA-45D6-89E6-C1A4D3AF626F}" Name="TcoDrivesBeckhoffTests" PrjFilePath="TcoDrivesBeckhoffTests\TcoDrivesBeckhoffTests.plcproj" TmcFilePath="TcoDrivesBeckhoffTests\TcoDrivesBeckhoffTests.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{B257918E-036A-3781-B782-9A41479C3E48}" TmcPath="TcoDrivesBeckhoffTests\TcoDrivesBeckhoffTests.tmc">
+				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{F575AB91-6031-542C-0F67-196D31FB357D}" TmcPath="TcoDrivesBeckhoffTests\TcoDrivesBeckhoffTests.tmc">
 					<Name>TcoDrivesBeckhoffTests Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="2" AreaNo="1">
@@ -2836,10 +2836,6 @@ External Setpoint Generation:
 					<Vars VarGrpType="1">
 						<Name>PlcTask1 Inputs</Name>
 						<Var>
-							<Name>GVL._calibrationCam</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
 							<Name>GVL.SimpleAxis1.NcToPlc</Name>
 							<Type GUID="{25521FAA-EA5F-4C7F-8864-BBCCDACD2E98}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
 						</Var>
@@ -2866,6 +2862,10 @@ External Setpoint Generation:
 						<Var>
 							<Name>GVL.Axis4.NcToPlc</Name>
 							<Type GUID="{25521FAA-EA5F-4C7F-8864-BBCCDACD2E98}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
+						</Var>
+						<Var>
+							<Name>GVL._calibrationCam</Name>
+							<Type>BOOL</Type>
 						</Var>
 					</Vars>
 					<Contexts>

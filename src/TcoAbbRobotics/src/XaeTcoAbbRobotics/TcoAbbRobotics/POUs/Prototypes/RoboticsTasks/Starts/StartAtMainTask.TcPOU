@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4026.8">
   <POU Name="StartAtMainTask" Id="{213bca30-5c03-0b43-34d1-c9e329dd4949}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK StartAtMainTask EXTENDS TcoAbbRoboticsTask]]></Declaration>
     <Implementation>
@@ -88,7 +88,7 @@ METHOD PROTECTED OnDone
 ]]></ST>
       </Implementation>
     </Method>
-    <Method Name="OnError" Id="{8a4572b6-c7d2-0503-06c2-d46ef44b96b1}">
+    <Method Name="OnError" Id="{ce1e849d-b97d-062b-140d-221431d1662f}">
       <Declaration><![CDATA[(*~
 	<docu>
 		<summary>

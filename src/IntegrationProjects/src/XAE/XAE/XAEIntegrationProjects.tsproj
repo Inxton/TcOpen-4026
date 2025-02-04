@@ -20,7 +20,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{F2EE7FEF-C378-46BC-BB6A-865036F0C8ED}" Name="IntegrationProjects" PrjFilePath="IntegrationProjects\IntegrationProjects.plcproj" TmcFilePath="IntegrationProjects\IntegrationProjects.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{9552E083-AE82-F983-7C28-5455DCC4456B}" TmcPath="IntegrationProjects\IntegrationProjects.tmc">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{BBB6F273-3B12-0F98-BE5F-C2010C45E6AB}" TmcPath="IntegrationProjects\IntegrationProjects.tmc">
 					<Name>IntegrationProjects Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="2" AreaNo="1">

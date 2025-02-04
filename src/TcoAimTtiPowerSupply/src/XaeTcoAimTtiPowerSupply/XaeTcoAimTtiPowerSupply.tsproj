@@ -2818,7 +2818,7 @@ External Setpoint Generation:
 		</Motion>
 		<Plc>
 			<Project GUID="{20FEF108-471B-4D50-A210-154818B5D824}" Name="TcoAimTtiPowerSupply" PrjFilePath="TcoAimTtiPowerSupply\TcoAimTtiPowerSupply.plcproj" TmcFilePath="TcoAimTtiPowerSupply\TcoAimTtiPowerSupply.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{070CBC0C-58AD-EDF7-EA1F-B898A0D70B54}" TmcPath="TcoAimTtiPowerSupply\TcoAimTtiPowerSupply.tmc">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{1FADE25C-F9EA-35B9-F0AE-65E54B759368}" TmcPath="TcoAimTtiPowerSupply\TcoAimTtiPowerSupply.tmc">
 					<Name>TcoAimTtiPowerSupply Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>
@@ -2838,7 +2838,7 @@ External Setpoint Generation:
 				</Instance>
 			</Project>
 			<Project GUID="{C4D9013E-3EDC-4D77-BD13-1437E40A0F72}" Name="TcoAimTtiPowerSupplyTests" PrjFilePath="TcoAimTtiPowerSupplyTests\TcoAimTtiPowerSupplyTests.plcproj" TmcFilePath="TcoAimTtiPowerSupplyTests\TcoAimTtiPowerSupplyTests.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{F2F2CB86-2094-1842-8BA9-B6F1BCAE3404}" TmcPath="TcoAimTtiPowerSupplyTests\TcoAimTtiPowerSupplyTests.tmc">
+				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{C51E4248-3D11-5F5E-70CA-8DEC14E4FECE}" TmcPath="TcoAimTtiPowerSupplyTests\TcoAimTtiPowerSupplyTests.tmc">
 					<Name>TcoAimTtiPowerSupplyTests Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<UnrestoredVarLinks ImportTime="2023-09-12T14:49:15">
