@@ -201,10 +201,10 @@ _Libraries/
 
 *.~u
 
-*.tmc 
-*.tmcRefac
-*.tmy
-*.tpy
+#*.tmc 
+#*.tmcRefac
+#*.tmy
+#*.tpy
 *.tclrs
 *.library
 *.compiled-library
